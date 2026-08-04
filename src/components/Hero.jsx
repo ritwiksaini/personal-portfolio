@@ -58,7 +58,7 @@ export default function Hero() {
                 LinkedIn
               </a>
               <a
-                href="/personal-portfolio/resume.pdf"
+                href="/resume.pdf"
                 download
                 className="inline-flex items-center gap-2 px-6 py-3 border border-ink-700 text-ink-300 text-sm font-light tracking-wide hover:border-gold hover:text-gold transition-colors duration-200"
               >

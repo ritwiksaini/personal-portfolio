@@ -10,5 +10,5 @@ export default defineConfig({
       plugins: [tailwindcss(), autoprefixer()],
     },
   },
-  base: '/personal-portfolio/',
+  base: '/',
 })
