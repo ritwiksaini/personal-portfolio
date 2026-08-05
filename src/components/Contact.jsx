@@ -13,14 +13,14 @@ export default function Contact() {
         <FadeIn delay={0.1}>
           <h2 className="font-display text-4xl md:text-5xl text-white font-semibold mb-4 leading-tight">
             If you're looking for someone<br />
-            <em className="font-normal text-ink-400">who acts before consensus forms —</em>
+            <em className="font-normal text-ink-400">who acts before consensus forms.</em>
           </h2>
         </FadeIn>
 
         <FadeIn delay={0.2}>
           <p className="text-ink-400 text-sm font-light mb-12 max-w-md">
             I'm pursuing full-time roles in PE, VC, and IB. I don't send
-            templated applications — if the firm's thesis is interesting, I'll
+            templated applications. If the firm's thesis is interesting, I'll
             have already thought about it.
           </p>
         </FadeIn>

@@ -10,20 +10,21 @@ export default function About() {
         </FadeIn>
         <FadeIn delay={0.1}>
           <p className="font-display text-2xl md:text-3xl lg:text-4xl text-white font-normal leading-[1.4] max-w-3xl text-balance">
-            Most people with a CS degree go into tech.{' '}
-            <em className="italic">I chose private markets</em>
+            I picked private markets because{' '}
+            <em className="italic">the questions are harder.</em>{' '}
             <span className="text-ink-400">
-              {' '}— because I think the questions are harder, the feedback
-              loops are longer, and the thinking that actually creates an edge
-              isn't taught in any single discipline.
+              In software, the system tells you when you're wrong. In capital
+              allocation, it can take years.
             </span>
           </p>
         </FadeIn>
         <FadeIn delay={0.2}>
           <p className="mt-6 text-ink-400 text-base font-light leading-relaxed max-w-2xl">
-            CS left me with one habit I can't shake: don't trust the output
-            until you understand the mechanism. I've been applying that to
-            companies, theses, and capital allocation ever since.
+            That longer feedback loop demands something different: the patience
+            to sit with complexity, the discipline to separate signal from
+            narrative, and the willingness to stake a position before the data
+            is complete. I came to those habits through CS. I've been testing
+            them in PE ever since.
           </p>
         </FadeIn>
       </div>
