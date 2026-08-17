@@ -3,12 +3,12 @@ export const experience = [
     company: 'Limbic Capital',
     role: 'Private Equity Intern',
     location: 'London, UK',
-    period: 'Apr 2026 – Present',
+    period: 'Apr 2026 – July 2026',
     bullets: [
       'Built a sourcing infrastructure from scratch: automated outreach across M&A Advisory, Manufacturing, Real Estate, and HVAC, generating 20 first meetings and 3 signed NDAs in the first month. Sourcing as a system, not a hunt.',
       'Mapped 500+ companies and 370+ contacts across RNG/AD developers and European lower mid-market M&A advisors; built a proprietary database of 7,000+ US companies tracking M&A activity to give the team a structural coverage advantage.',
       'Red-teamed the data center investment thesis from first principles: probability-weighted scenario models, primary hard signals, kill-criteria stress testing. Conclusion: mode selection, not sector timing, determines whether the thesis works.',
-      'Diagnosed the conversion funnel of an alpha-stage portfolio SaaS company and deployed an analytics layer that autonomously corrects copy when metrics breach floor thresholds, closing the feedback loop no one had automated.',
+      'Created the end-to-end marketing pipeline of an alpha-stage portfolio SaaS company and deployed an analytics layer that autonomously corrects copy when metrics breach floor thresholds, closing the feedback loop no one had automated.',
     ],
   },
   {
@@ -101,7 +101,7 @@ export const projects = [
       'PE deal triage follows the same pattern every time: ingest documents, extract the metrics that matter, write the memo. I automated all three with a multi-agent LLM pipeline, reducing analyst write-up time from days to minutes.',
       '60% faster on metric extraction. An additional 30% efficiency gain from integrated LBO Modeling and Research agents that feed conclusions directly into the IC Memo. The model does the grunt work; the analyst does the judgment.',
     ],
-    github: 'https://github.com/ritwiksaini',
+    github: 'https://github.com/ritwiksaini/dealtroops',
   },
   {
     title: 'HubAssist',
@@ -110,7 +110,7 @@ export const projects = [
     bullets: [
       'BU\'s course planning system forced students to manually check 7,000+ courses against graduation requirements, a coordination problem cleanly solvable by a greedy algorithm. Built the algorithm, then the product. 1,500+ students used it.',
     ],
-    github: 'https://github.com/ritwiksaini',
+    github: 'https://github.com/WebDev679/HubAssist',
   },
 ]
 
@@ -118,6 +118,7 @@ export const skills = {
   finance: [
     'Financial Modeling',
     'LBO Analysis',
+    'DCF Modeling',
     'Equity Research',
     'Financial Statement Analysis',
     'Deal Sourcing',
@@ -126,8 +127,8 @@ export const skills = {
     'Cap Table Review',
     'Bloomberg Terminal',
     'Econometrics',
-    'CFA Level I',
-    'Stata',
+    'Valuation',
+    'Time Series Analysis',
   ],
   tools: [
     'Excel (Advanced)',
@@ -138,6 +139,11 @@ export const skills = {
     'Salesforce',
     'PostgreSQL',
     'AWS',
+    'Stata',
+    'React',
+    'Django',
+    'Vite',
+    'Docker',
   ],
 }
 
@@ -146,12 +152,12 @@ export const education = [
     school: 'Boston University',
     degree: 'BA Computer Science & Economics',
     period: 'Sep 2022 – May 2026',
-    details: ['GPA 3.52 / 4.0', 'Presidential Scholarship', "Dean's List"],
+    details: ['GPA 3.5 / 4.0', 'Presidential Scholarship', "Dean's List"],
   },
   {
-    school: 'CFA Institute',
-    degree: 'CFA® Level I (Passed)',
-    period: 'March 2026',
-    details: [],
+    school: 'Pace Junior Science College',
+    degree: 'HSC (Class XII) · Science Stream',
+    period: 'Aug 2020 - April 2022',
+    details: ['Grade: 90%', 'Top 1% of cohort', 'INSPIRE Scholarship'],
   },
 ]

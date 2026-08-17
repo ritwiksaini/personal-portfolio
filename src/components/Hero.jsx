@@ -37,7 +37,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.35 }}
               className="text-ink-300 text-base font-light leading-relaxed max-w-md mb-10"
             >
-              Venture Capital, Private Equity & Investment Banking. I source deals, build theses,
+              Private Capital Markets. I source deals, build theses,
               model investments, and build automations around financial workflows, sitting at the intersection of rigorous
               financial analysis and technology-driven execution.
             </motion.p>

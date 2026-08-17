@@ -13,7 +13,7 @@ export default function Research() {
         <FadeIn delay={0.05}>
           <p className="text-ink-500 text-sm font-light mb-14 max-w-xl">
             Sector theses built from first principles. The thesis, the data, and
-            a recommendation, on the record.
+            a recommendation.
           </p>
         </FadeIn>
 

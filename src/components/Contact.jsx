@@ -12,16 +12,14 @@ export default function Contact() {
 
         <FadeIn delay={0.1}>
           <h2 className="font-display text-4xl md:text-5xl text-white font-semibold mb-4 leading-tight">
-            If you're looking for someone<br />
-            <em className="font-normal text-ink-400">who acts before consensus forms.</em>
+            Open to VC, PE & IB Opportunities<br />
+            <em className="font-normal text-ink-400">and discussing energy-tech, AI Infra and deep-tech.</em>
           </h2>
         </FadeIn>
 
         <FadeIn delay={0.2}>
           <p className="text-ink-400 text-sm font-light mb-12 max-w-md">
-            I'm pursuing full-time roles in PE, VC, and IB. I don't send
-            templated applications. If the firm's thesis is interesting, I'll
-            have already thought about it.
+            I'm pursuing full-time roles in PE, VC, and IB. If you're looking for someone who can source deals, build investment theses, and automate financial workflows, let's connect. I'm also happy to chat about energy-tech, AI Infra, and deep-tech.
           </p>
         </FadeIn>
 

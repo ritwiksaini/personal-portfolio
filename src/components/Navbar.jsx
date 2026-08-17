@@ -4,6 +4,7 @@ const links = [
   { label: 'Experience', href: '#experience' },
   { label: 'Research', href: '#research' },
   { label: 'Projects', href: '#projects' },
+  { label: 'Blogs', href: 'https://blogs.ritwiksaini.com' },
   { label: 'Contact', href: '#contact' },
 ]
 
