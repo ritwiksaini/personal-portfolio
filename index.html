@@ -79,6 +79,18 @@
       }
     </style>
 
+    <noscript>
+      <style>
+        /* framer-motion serialises initial={{ opacity: 0 }} into the prerendered
+           HTML and only animates it in on hydration. Without JS nothing would
+           ever become visible, so reveal everything up front. */
+        #root [style*='opacity:0'] {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+      </style>
+    </noscript>
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -139,21 +151,6 @@
   </head>
   <body>
     <div id="root"></div>
-    <noscript>
-      <h1>Ritwik Saini</h1>
-      <p>Boston University '26 &middot; CFA Level I</p>
-      <p>
-        Private Capital Markets. I source deals, build theses, model
-        investments, and build automations around financial workflows, sitting
-        at the intersection of rigorous financial analysis and technology-driven
-        execution.
-      </p>
-      <p>
-        <a href="https://www.linkedin.com/in/ritwik-saini/">LinkedIn</a> &middot;
-        <a href="https://blogs.ritwiksaini.com/">Blog</a> &middot;
-        <a href="mailto:sritwik24@gmail.com">sritwik24@gmail.com</a>
-      </p>
-    </noscript>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

@@ -90,7 +90,7 @@ export default function Hero() {
                     sizes="(min-width: 768px) 288px, 256px"
                     width="288"
                     height="384"
-                    fetchPriority="high"
+                    fetchpriority="high"
                     decoding="async"
                     alt="Ritwik Saini"
                     className="w-full h-full object-cover object-top grayscale hover:grayscale-0 transition-all duration-700"
