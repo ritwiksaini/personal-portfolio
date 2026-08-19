@@ -27,7 +27,7 @@ export default function Contact() {
           <div className="flex flex-wrap gap-4">
             <a
               href="mailto:sritwik24@gmail.com"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-gold text-[#0d0d0d] text-sm font-medium tracking-wide hover:bg-gold-light transition-colors duration-200"
+              className="inline-flex items-center gap-2 px-6 py-3.5 bg-gold text-[#0d0d0d] text-sm font-medium tracking-wide hover:bg-gold-light transition-colors duration-200"
             >
               <EmailIcon />
               sritwik24@gmail.com
@@ -36,7 +36,7 @@ export default function Contact() {
               href="https://www.linkedin.com/in/ritwik-saini/"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 border border-ink-700 text-ink-300 text-sm font-light tracking-wide hover:border-gold hover:text-gold transition-colors duration-200"
+              className="inline-flex items-center gap-2 px-6 py-3.5 border border-ink-700 text-ink-300 text-sm font-light tracking-wide hover:border-gold hover:text-gold transition-colors duration-200"
             >
               <LinkedInIcon />
               LinkedIn

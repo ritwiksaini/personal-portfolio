@@ -65,13 +65,13 @@ export default function Navbar() {
       {/* Mobile menu */}
       {menuOpen && (
         <div className="md:hidden bg-[#0d0d0d]/98 border-b border-ink-900">
-          <ul className="flex flex-col px-6 py-4 gap-4">
+          <ul className="flex flex-col px-6 py-2 gap-1">
             {links.map((l) => (
               <li key={l.href}>
                 <a
                   href={l.href}
                   onClick={() => setMenuOpen(false)}
-                  className="block text-sm font-light tracking-widest uppercase text-ink-300 hover:text-gold transition-colors"
+                  className="block py-3.5 text-sm font-light tracking-widest uppercase text-ink-300 hover:text-gold transition-colors"
                 >
                   {l.label}
                 </a>

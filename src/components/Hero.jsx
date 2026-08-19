@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import headshot from '../assets/headshot.jpg'
 
 export default function Hero() {
   return (
@@ -52,7 +51,7 @@ export default function Hero() {
                 href="https://www.linkedin.com/in/ritwik-saini/"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-gold text-[#0d0d0d] text-sm font-medium tracking-wide hover:bg-gold-light transition-colors duration-200"
+                className="inline-flex items-center gap-2 px-6 py-3.5 bg-gold text-[#0d0d0d] text-sm font-medium tracking-wide hover:bg-gold-light transition-colors duration-200"
               >
                 <LinkedInIcon />
                 LinkedIn
@@ -60,7 +59,7 @@ export default function Hero() {
               <a
                 href="/Saini, Ritwik - Resume.pdf"
                 download
-                className="inline-flex items-center gap-2 px-6 py-3 border border-ink-700 text-ink-300 text-sm font-light tracking-wide hover:border-gold hover:text-gold transition-colors duration-200"
+                className="inline-flex items-center gap-2 px-6 py-3.5 border border-ink-700 text-ink-300 text-sm font-light tracking-wide hover:border-gold hover:text-gold transition-colors duration-200"
               >
                 <DownloadIcon />
                 Download Resume
@@ -77,11 +76,26 @@ export default function Hero() {
           >
             <div className="relative">
               <div className="w-64 h-80 md:w-72 md:h-96 overflow-hidden">
-                <img
-                  src={headshot}
-                  alt="Ritwik Saini"
-                  className="w-full h-full object-cover object-top grayscale hover:grayscale-0 transition-all duration-700"
-                />
+                {/* Served from /public so the filenames stay stable and the
+                    LCP preload in index.html can point at them. */}
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcSet="/headshot-288.webp 288w, /headshot-576.webp 576w"
+                    sizes="(min-width: 768px) 288px, 256px"
+                  />
+                  <img
+                    src="/headshot-288.jpg"
+                    srcSet="/headshot-288.jpg 288w, /headshot-576.jpg 576w"
+                    sizes="(min-width: 768px) 288px, 256px"
+                    width="288"
+                    height="384"
+                    fetchPriority="high"
+                    decoding="async"
+                    alt="Ritwik Saini"
+                    className="w-full h-full object-cover object-top grayscale hover:grayscale-0 transition-all duration-700"
+                  />
+                </picture>
               </div>
               {/* Decorative border offset */}
               <div className="absolute -bottom-3 -right-3 w-full h-full border border-gold/30 pointer-events-none" />
