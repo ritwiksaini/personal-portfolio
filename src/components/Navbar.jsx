@@ -18,10 +18,32 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
+  useEffect(() => {
+    if (!menuOpen) return
+
+    const onKeyDown = (e) => {
+      if (e.key === 'Escape') setMenuOpen(false)
+    }
+    const desktop = window.matchMedia('(min-width: 768px)')
+    const onDesktop = (e) => {
+      if (e.matches) setMenuOpen(false)
+    }
+
+    window.addEventListener('keydown', onKeyDown)
+    desktop.addEventListener('change', onDesktop)
+    document.body.style.overflow = 'hidden'
+
+    return () => {
+      window.removeEventListener('keydown', onKeyDown)
+      desktop.removeEventListener('change', onDesktop)
+      document.body.style.overflow = ''
+    }
+  }, [menuOpen])
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
+        scrolled || menuOpen
           ? 'bg-[#0d0d0d]/95 backdrop-blur-md border-b border-ink-900'
           : 'bg-transparent'
       }`}
@@ -53,6 +75,7 @@ export default function Navbar() {
           className="md:hidden text-ink-300 hover:text-white"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
+          aria-expanded={menuOpen}
         >
           <div className="flex flex-col gap-1.5 w-6">
             <span className={`block h-px bg-current transition-all ${menuOpen ? 'rotate-45 translate-y-2' : ''}`} />
@@ -64,7 +87,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-[#0d0d0d]/98 border-b border-ink-900">
+        <div className="md:hidden bg-[#0d0d0d] border-b border-ink-900 max-h-[calc(100dvh-4rem)] overflow-y-auto">
           <ul className="flex flex-col px-6 py-2 gap-1">
             {links.map((l) => (
               <li key={l.href}>
